@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    background-color: #071E22;
+}
+
+.bloco-principal {
+    width: 1282;
+    height: 666;
+    background-color: #3891A6;
+    margin-top: 100px;
+    margin-left: 81px;
+    margin-right: 77px;
+}
+
+.principal-title {
+    font-family: 'Poppins';
+    font-size: 39.02px;
+    color: #D9D9D9;
+    font-weight: 400;
+    padding-top: 79px;
+    padding-left: 110px;
+}
+
+.principal-texto {
+    font-family: 'Inter';
+    font-size: 22.05px;
+    color: #D9D9D9;
+    margin-top: 19px;
+    margin-left: 114px;
+}
+
+.principal-botao {
+    background-color: #D9D9D9;
+    color: #071E22;
+    font-family: 'Inter';
+    font-size: 28.89px;
+    width: 250px;
+    height: 70.88px;
+    border-radius: 7.62px;
+    border-color: #D9D9D9;
+
+    margin-top: 41px;
+    margin-left: 219px;
+}
+
+.artigo {
+    width: 476px;
+    height: 538px;
+}
+
+.textosebotao {
+    display: flex;
+    flex-direction: column;
+}
+
+.imagem-principal {
+    display: flex;
+    flex-direction: row;
+    margin-left: 82px;
+    margin-right: 57px;
+    margin-bottom: 64px;
+    margin-top: -200spx;
+}
+
+.bloco2 {
+    display: flex;
+    flex-direction: row;
+}
