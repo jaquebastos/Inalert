@@ -10,22 +10,22 @@
 }
 
 body {
-    background-color: var(--corFundo);
+    background-color: #071E22;
     margin-bottom: 150px;
 }
 
 .titulo {
-    color: var(--corBranco);
+    color: #FFFFFF;
     font-family: 'Poppins';
     margin-top: 105.08px;
     display: flex;
     justify-content: center;
     font-size: 50.64px;
-    padding-bottom: 100px;
+    padding-bottom: 69px;
 }
 
 .destaque {
-    color: var(--corLaranja);
+    color: #D64933;
     padding-right: 10px;
 }
 
@@ -36,50 +36,79 @@ body {
 }
 
 .card1 {
-    background-color: var(--corCard);
+    background-color: #3891A6;
     width: 340px;
     height: 425px;
     margin-left: 149px;
     padding: 5px;
 }
 
-.card-texto, .card-texto2, .card-texto3 {
+.card-imagem, .card-imagem2 {
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-top: -42px;
+    width: 200px;
+    height: 200px;
+}
+
+.card-texto {
     font-size: 23.33px;
     font-family: 'Inter';
-    color: var(--corBranco);
+    color: #FFFFFF;
     font-weight: 400;
     padding-left: 34px;
     padding-right: 40px;
     text-align: center;
-    margin-top: 30px;
+    padding-top: 20px;
+
 }
 
 .card2 {
-    background-color: var(--corCard);
+    background-color: #3891A6;
     width: 340px;
     height: 425px;
     margin-left: 63px;
     padding: 5px;
 }
 
+/* .card-imagem2 {
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-top: -42px;
+} */
+
+.card-texto2 {
+    font-size: 23.33px;
+    font-family: 'Inter';
+    color: #FFFFFF;
+    font-weight: 400;
+    padding-left: 34px;
+    padding-right: 40px;
+    text-align: center;
+    margin-top: 35px;
+}
+
 .card3 {
-    background-color: var(--corCard);
+    background-color: #3891A6;
     width: 340px;
     height: 425px;
     margin-left: 63px; 
     padding: 5px;
 }
 
-.card-imagem3, .card-imagem2, .card-imagem {
-    padding-left: 47px;
-    padding-right: 47px; 
+.card-imagem3 {
+    padding-left: 21px;
+    padding-right: 22px; 
     margin-top: -64px;
-    width: 247px;
-    height: 247px;
 }
 
-.cards-secundario {
-    display: flex;
-    flex-direction: row;
-    margin-top: 200px;
+.card-texto3 {
+    font-size: 23.33px;
+    font-family: 'Inter';
+    color: #FFFFFF;
+    font-weight: 400;
+    padding-left: 34px;
+    padding-right: 40px;
+    text-align: center;
+    margin-top: 5px;
 }
