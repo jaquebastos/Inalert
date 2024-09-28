@@ -9,11 +9,53 @@
     --corFundo: #071E22;
     --corLaranja: #F24C27;
     --corRole: #ECEFF1;
+    --azul: #3891A6;
 }
 
 body {
     background-color: var(--corFundo);
     margin-bottom: 158px;
+}
+
+.navbar {
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    margin-top: 20px;
+    height: 70px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 58px;
+    font-family: 'Inter';
+    color: var(--azul);
+ 
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 120px;
+    align-items: center;
+    justify-items: center;
+  }
+  
+  .navbar li {
+    list-style: none;
+    font-size: 19px;
+}
+
+.nav-links{
+  font-weight: bold;
+  color: var(--color-secundária);
+  text-decoration: none;
+}
+
+img{
+    height: 150px;
+    width: 150px;
+    margin-top: 10px;
 }
 
 .titulo {
