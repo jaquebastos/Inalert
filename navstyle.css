@@ -1,0 +1,54 @@
+/* STYLE NAVBAR */
+:root{
+    --color-fundo:#071E22 ; 
+    --color-secundária: #3891A6 ;
+    --color-textop1: #ffffff ;
+    --color-titulo:#d64933;
+    --color-dest: #000000; 
+}
+
+* {
+    margin: 0;
+}
+
+body { 
+    background-color: #071E22;
+    font-family: 'inter';
+}
+
+.navbar {
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    margin-top: 20px;
+    height: 70px;
+    margin-left: 10%;
+    margin-right: 10%;
+ 
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 120px;
+    align-items: center;
+    justify-items: center;
+  }
+  
+  .navbar li {
+    list-style: none;
+    font-size: 19px;
+}
+
+.nav-links{
+  font-weight: bold;
+  color: var(--color-secundária);
+  text-decoration: none;
+}
+
+img{
+    height: 150px;
+    width: 150px;
+}
