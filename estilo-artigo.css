@@ -1,0 +1,157 @@
+/* Importação das fontes utilizadas */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --corBranco: #d9d9d9;
+    --corLaranjaSpan: #D64933;
+    --corFundo: #071E22;
+    --azul: #3891A6;
+}
+
+body {
+    background-color: var(--corFundo);
+    margin-top: 8%;
+}
+
+.navbar {
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    height: 70px;
+    margin-top: -6%;
+    margin-left: 3%;
+    margin-right: 3%;
+ 
+}
+
+.navbar-ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 120px;
+    align-items: center;
+    justify-items: center;
+  }
+  
+  .navbar li {
+    list-style: none;
+    font-size: 19px;
+}
+
+.nav-links{
+  font-weight: bold;
+  color: var(--azul);
+  text-decoration: none;
+  font-family: 'Inter';
+  font-weight: 600;
+}
+
+img{
+    height: 150px;
+    width: 150px;
+    padding-top: 5%;
+}
+
+.artigo {
+    display: flex;
+    flex-direction: row-reverse;
+
+    margin-top: 5%;
+    margin-left: 20%;
+    margin-right: 20%;
+
+    margin-bottom: 15%;
+}
+
+.artigo-title {
+    font-family: 'Poppins';
+    color: var(--corBranco);
+    font-size: 30px;
+    margin-top: 6%;
+}
+
+.artigo-destaque {
+    color: var(--corLaranjaSpan);
+}
+
+.botao-artigo {
+    width: 300px;
+    height: 76px;
+    border-radius: 15px;
+    border-color: var(--corLaranjaSpan);
+    background-color: var(--corLaranjaSpan);
+
+    color: var(--corBranco);
+    font-family: 'Inter';
+    font-weight: 600;
+    font-size: 20px;
+
+    margin-top: 8%;
+
+    margin-left: 15%;
+}
+
+.article-image {
+    margin-right: 10%;
+}
+
+.imagem {
+    width: 380px;
+    height: 476px;
+}
+
+footer {
+    background-color: var(--azul);
+    margin-top: 15%;
+    height: 400px;
+    margin-bottom: -12%;
+}
+
+.parte1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.texto-footer {
+    font-family: 'Inter';
+    font-size: 20px;
+    color: var(--corBranco);
+    margin: 0 10% 0 10%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.linha {
+    width: 100%;
+    height: 1px;
+    background-color: var(--corFundo);
+    margin-top: 5%;
+}
+
+.parte2 {
+    display: flex;
+    margin-top: 2%;
+    margin-left: 20%;
+    gap: 1%;
+}
+
+.parte2 img {
+    width: 24px;
+    height: 24px;
+}
+
+.parte2 p {
+    font-size: medium;
+    font-family: 'Inter';
+    color: var(--corBranco);
+    margin-top: 4px;
+}
+
+.copy {
+    margin-left: 5%;
+}
