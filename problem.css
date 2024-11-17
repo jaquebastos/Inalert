@@ -1,0 +1,201 @@
+/* Style dos elementos imagem, botão e título */
+
+:root{
+    --color-fundo:#071E22 ; 
+    --color-secundária: #3891A6 ;
+    --color-textop1: #ffffff ;
+    --color-titulo:#d64933;
+    --color-dest: #000000;    
+}
+
+.titulo{
+    font-size: 40px; 
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'poppins';
+    text-align: center;
+    margin-top: 50px;
+    color: var(--color-titulo);    
+}
+
+.container{
+    display: flex;
+    gap: 100px; 
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.icons {
+    margin-bottom: 20px;
+}
+
+.button {
+    width: 150px;
+    height: 30px;
+    background: var(--color-secundária);
+    color: var(--color-textop1); 
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.4s ease-in-out;
+}
+
+.button:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 10px rgba(255, 255, 255, 0.2);
+}
+
+
+/* Style dos modais */
+
+.janela-modal, .janela-modal2, .janela-modal3, .janelaconcl {
+    width: 200px;
+    /* height: 200px; */
+    top: 0;
+    left: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    margin-top: 120px;
+    margin-bottom: 50px;
+}
+
+.modal, .modal2, .modal3, .modconcl{
+    width: 200px;
+    height: 275px;
+    background-color: var(--color-secundária);
+    padding: 30px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    position: absolute; 
+}
+
+.modal h3, .modal2 h3, .modal3 h3, .modconcl h3{
+    font-family: 'poppins';
+    color: var(--color-textop1); 
+    text-align: center;
+    font-weight: bold;  
+    font-size: 20px;
+}
+
+.modal p, .modal2 p, .modal3 p, .modconcl p{
+    font-family: 'inter';
+    font-size: 15px;
+    color: var(--color-textop1);
+    text-align: center;
+    margin-top: 15px;
+}
+
+.fechar, .fechar2, .fechar3, .fechaconcl{
+    position: absolute;
+    top: -10px; 
+    right: -10px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: none;
+    background-color: var(--color-titulo);
+    color: var(--color-dest);
+    font-size: 15px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: transform 0.4s ease-in-out;
+
+}
+
+.fechar:hover, .fechar2:hover, .fechar3:hover, .fechaconcl:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 5px 10px rgba(255, 255, 255, 0.2);
+}
+
+
+/* Style somente do modal 'Intrdução' */
+
+.janela-modal.abrir{
+    display: flex;
+}
+
+@keyframes abrirmodal {
+    from{
+        opacity: 0;
+        transform: translate3d(0, -20px, -5px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translate3d(0,0,0);
+    }
+}
+
+.abrir .modal{
+    animation: abrirmodal 0.8s;
+}
+
+/* Style somente do modal 'Questões ambientais' */
+
+.janela-modal2.open{
+    display: flex;
+}
+
+@keyframes modalabrir {
+    from{
+        opacity: 0;
+        transform: translate3d(0, -20px, -5px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translate3d(0,0,0);
+    }
+}
+
+.open .modal2{
+    animation: modalabrir 0.8s;
+}
+
+/* Style somente do modal 'Acidentes' */
+
+.janela-modal3.openmodal{
+    display: flex;
+}
+
+@keyframes abrir {
+    from{
+        opacity: 0;
+        transform: translate3d(0, -20px, -5px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translate3d(0,0,0);
+    }
+}
+
+.openmodal .modal3{
+    animation: modalabrir 0.8s;
+}
+
+/* Style somente do modal 'Conclusão' */
+
+.janelaconcl.abr{
+    display: flex;
+}
+
+@keyframes concl{
+    from{
+        opacity: 0;
+        transform: translate3d(0, -20px, -5px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translate3d(0,0,0);
+    }
+}
+
+.abr .modconcl{
+    animation: modalabrir 0.8s;
+}
+
