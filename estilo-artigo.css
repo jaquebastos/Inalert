@@ -5,30 +5,37 @@
 
 :root{
     --corBranco: #d9d9d9;
-    --corLaranjaSpan: #D64933;
+    --corLaranja: #D64933;
     --corFundo: #071E22;
-    --azul: #3891A6;
+    --corAzul: #3891A6;
 }
 
-body {
+* {
+    margin: 0;
+}
+
+body { 
     background-color: var(--corFundo);
-    margin-top: 8%;
+    font-family: 'inter';
+
+    scroll-behavior: smooth;
 }
 
+/* Estilo navbar */
 .navbar {
     background-color: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 30px;
+    margin-top: 20px;
     height: 70px;
-    margin-top: -6%;
-    margin-left: 3%;
-    margin-right: 3%;
+    margin-left: 10%;
+    margin-right: 10%;
  
 }
 
-.navbar-ul {
+.navbar ul {
     display: flex;
     justify-content: space-between;
     gap: 120px;
@@ -43,18 +50,18 @@ body {
 
 .nav-links{
   font-weight: bold;
-  color: var(--azul);
+  color: var(--corAzul);
   text-decoration: none;
-  font-family: 'Inter';
-  font-weight: 600;
 }
 
 img{
     height: 150px;
     width: 150px;
-    padding-top: 5%;
+
+    margin-top: 5%;
 }
 
+/* Estilo do artigo */
 .artigo {
     display: flex;
     flex-direction: row-reverse;
@@ -69,30 +76,40 @@ img{
 .artigo-title {
     font-family: 'Poppins';
     color: var(--corBranco);
-    font-size: 30px;
-    margin-top: 6%;
+    font-size: 35px;
+    margin-top: 10%;
+    font-weight: 600;
 }
 
 .artigo-destaque {
-    color: var(--corLaranjaSpan);
+    color: var(--corLaranja);
 }
 
 .botao-artigo {
     width: 300px;
     height: 76px;
     border-radius: 15px;
-    border-color: var(--corLaranjaSpan);
-    background-color: var(--corLaranjaSpan);
-
+    border: none;
+    background-color: var(--corLaranja);
     color: var(--corBranco);
     font-family: 'Inter';
     font-weight: 600;
     font-size: 20px;
-
-    margin-top: 8%;
-
+    margin-top: 20%;
     margin-left: 15%;
+    cursor: pointer;
+
+    /* Suaviza as transições */
+    transition: all 0.3s ease-in-out;
 }
+
+/* Efeito de hover */
+.botao-artigo:hover {
+    background-color: #FF5733;
+    transform: scale(1.1);
+    box-shadow: 0px 4px 15px rgba(255, 87, 51, 0.6);
+}
+
 
 .article-image {
     margin-right: 10%;
@@ -104,18 +121,16 @@ img{
 }
 
 footer {
-    background-color: var(--azul);
+    background-color: var(--corAzul);
     margin-top: 15%;
     height: 400px;
     margin-bottom: -12%;
 }
-
 .parte1 {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-
 .texto-footer {
     font-family: 'Inter';
     font-size: 20px;
@@ -125,33 +140,32 @@ footer {
     align-items: center;
     text-align: center;
 }
-
 .linha {
     width: 100%;
     height: 1px;
     background-color: var(--corFundo);
     margin-top: 5%;
 }
-
 .parte2 {
     display: flex;
     margin-top: 2%;
     margin-left: 20%;
     gap: 1%;
 }
-
 .parte2 img {
     width: 24px;
     height: 24px;
 }
-
 .parte2 p {
     font-size: medium;
     font-family: 'Inter';
     color: var(--corBranco);
     margin-top: 4px;
 }
-
 .copy {
     margin-left: 5%;
+}
+
+.fc {
+    text-decoration: none;
 }

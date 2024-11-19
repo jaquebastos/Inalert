@@ -59,66 +59,62 @@ img{
     margin-top: 5%;
 }
 
-.manual {
-    width: 1282;
-    height: 666;
-    background-color: var(--corCard);
-    margin-top: 100px;
-    margin-left: 81px;
-    margin-right: 77px;
+/* Estilo home */
+.home {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+
+    margin-top: 7%;
 }
 
-.principal-title {
+.text-home {
+    width: 50%;
+}
+
+.text-home h1 {
+    font-size: 36px;
+    color: var(--corBranco);
     font-family: 'Poppins';
-    font-size: 39.02px;
+    font-size: 40px;
+
+    margin-left: 15%;
+}
+
+.text .destaque {
+    color: #ff6047;
+}
+
+.text-home p {
+    margin-top: 20px;
+
     color: var(--corBranco);
-    font-weight: 400;
-    padding-top: 79px;
-    padding-left: 110px;
-}
-
-.principal-texto {
     font-family: 'Inter';
-    font-size: 22.05px;
-    color: var(--corBranco);
-    margin-top: 19px;
-    margin-left: 114px;
+    text-align: justify;
+    font-size: 20px;
+
+    width: 500px;
+    margin-left: 10%;
 }
 
-.principal-botao {
-    background-color: var(--corBranco);
-    color: var(--corPreto);
-    font-family: 'Inter';
-    font-size: 28.89px;
-    width: 250px;
-    height: 70.88px;
-    border-radius: 7.62px;
-    border-color: var(--corBranco);
-
-    margin-top: 41px;
-    margin-left: 219px;
-}
-
-.artigo {
-    width: 476px;
-    height: 538px;
-}
-
-.textosebotao {
+.imagens-home {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap; /* Permite que as imagens "quebrem linha" em telas menores */
+    gap: 20px; /* Espaço entre as imagens */
+    justify-content: center; /* Centraliza as imagens */
+    align-items: center; /* Alinha as imagens verticalmente */
+    margin-top: 20px;
 }
 
-.imagem-principal {
-    display: flex;
-    flex-direction: row;
-    margin-left: 82px;
-    margin-right: 57px;
-    margin-bottom: 64px;
-    margin-top: -200spx;
+.imagens-home img {
+    width: 150px; /* Tamanho fixo ou ajustável */
+    height: auto; /* Mantém a proporção das imagens */
+    border-radius: 10px; /* Deixa as bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para destacar as imagens */
+    transition: transform 0.3s ease; /* Efeito de animação ao passar o mouse */
 }
 
-.bloco2 {
-    display: flex;
-    flex-direction: row;
+.imagens-home img:hover {
+    transform: scale(1.05); /* Aumenta ligeiramente a imagem ao passar o mouse */
 }
