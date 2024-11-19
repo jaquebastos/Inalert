@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Nosso artigo </title>
+    <link rel="stylesheet" href="estilo-artigo.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <header> 
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html" class="nav-links">Home</a></li>
+                <li><a href="artigo.html" class="nav-links">Artigo</a></li>
+                <a href="index.html"><li class="logo" class="nav-links"><img src="./assets/logo.png" alt="Logo"></li></a>
+                <li><a href="manual.html" class="nav-links">Manual</a></li>
+                <li><a href="sobre.html" class="nav-links">Sobre</a></li> 
+            </ul>   
+        </nav>
+    </header>
+
+    <section class="artigo">
+        <div class="title-botao">
+            <h1 class="artigo-title"> <span class="artigo-destaque"> Nosso artigo: </span> Detector móvel de gases inflamáveis 
+                com ESP-32 e sensor MQ2.
+            </h1>
+            
+            <a href="https://drive.google.com/file/d/1_i_a8TIr5lH60DXwSyvdwNAWv_55fESI/view?usp=sharing"> <button class="botao-artigo"> Visualizar </button> </a>
+        </div>
+    
+        <div class="article-image">
+            <img src="./assets/teste2.png" alt="capa do artigo" class="imagem">
+        </div>
+    </section>
+
+    <section class="app">
+        <!--Parte da Gi-->
+    </section>
+
+    <footer>
+        <div class="parte1">
+            <a href="Artigo.html"> <img src="./assets/logo2.png" alt="logo: inAlert" class="logo-footer" id="voltar-topo"> </a>
+            <p class="texto-footer"> Projeto desenvolvido nas aulas de Estudos Avançados de Ciências <br> e suas Tecnologias visando assegurar as pessoas em ambientes com <br> alta concentração de gases inflamáveis. </p>
+        </div>
+
+        <div class="linha"></div>
+
+        <div class="parte2">
+            <a href="https://www.instagram.com/gi_.santos20/"> <img src="./assets/instagram.png" alt="logo do instagram"> </a>
+            <a class="fc" href=""><p>Fale conosco</p></a>
+            <p class="copy"> Copyright &copy; 2024 !n Alert Todos os direitos reservados </p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('voltar-topo').addEventListener('click', function(event) {
+            event.preventDefault();
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script>
+</body>
+</html>
