@@ -60,65 +60,173 @@ img{
 }
 
 .manual {
-    width: 1282;
-    height: 666;
-    background-color: var(--corCard);
-    margin-top: 100px;
-    margin-left: 81px;
-    margin-right: 77px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--corAzul);
+    border-radius: 10px;
+    padding: 40px;
+    margin: 40px auto;
+    width: 80%;
+    margin-top: 6%;
 }
 
-.principal-title {
+.text-content {
+    max-width: 50%;
+    margin-left: 5%;
+}
+
+.text-content h1 {
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 20px;
     font-family: 'Poppins';
-    font-size: 39.02px;
     color: var(--corBranco);
-    font-weight: 400;
-    padding-top: 79px;
-    padding-left: 110px;
 }
 
-.principal-texto {
-    font-family: 'Inter';
-    font-size: 22.05px;
+.text-content p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
     color: var(--corBranco);
-    margin-top: 19px;
-    margin-left: 114px;
 }
 
-.principal-botao {
+.download-button {
     background-color: var(--corBranco);
-    color: var(--corPreto);
-    font-family: 'Inter';
-    font-size: 28.89px;
-    width: 250px;
-    height: 70.88px;
-    border-radius: 7.62px;
-    border-color: var(--corBranco);
-
-    margin-top: 41px;
-    margin-left: 219px;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 3%;
 }
 
-.artigo {
-    width: 476px;
-    height: 538px;
+.download-button:hover {
+    background-color: var(--corLaranja);
+    color: var(--corBranco);
 }
 
-.textosebotao {
+.manual-cover img {
+    width: 376px;
+    height: 438px;
+    margin-left: -20%;
+    transition: transform 0.3s ease;
+}
+
+.manual-cover img:hover {
+    transform: scale(1.1);
+}
+
+.title {
+    text-align: center;
+    font-family: 'poppins';
+    font-weight: bold;
+    font-size: 35px;
+    color: var(--corBranco); 
+    text-transform: uppercase;
+    margin-top: 12%;
+}
+
+.spandestaque{
+    color: var(--corLaranja);
+}
+
+.carrossel {
+    display: flex; /* Usar flexbox para alinhar os elementos */
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: center; /* Centraliza horizontalmente */
+    width: 950px; 
+    height: 650px;/* Ajuste a largura conforme necessário */
+    overflow: hidden;
+    margin: auto;
+  }
+  
+  .imagens {
+    display: flex;
+    transition: transform 0.5s ease; 
+  }
+  
+  .imagens img {
+    width: 650px;
+    height: 400px;
+    display: none; /* Esconde todas as imagens inicialmente */
+  
+  }
+  
+  .imagens img.active {
+    display: block; /* Exibe apenas a imagem ativa */
+  }
+  
+  .seta {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    width: 100px;
+    
+  }
+  
+  .seta img {
+    width: 60px; /* Ajuste o tamanho da imagem conforme necessário */
+    height: auto;
+  }
+  
+  .direita{
+    margin-right: 10px;
+  }
+  
+  .esquerda {
+    margin-left: 10px; 
+  }
+
+footer {
+    background-color: var(--corAzul);
+    margin-top: 15%;
+    height: 400px;
+    margin-bottom: -12%;
+}
+.parte1 {
     display: flex;
     flex-direction: column;
+    align-items: center;
+}
+.texto-footer {
+    font-family: 'Inter';
+    font-size: 20px;
+    color: var(--corBranco);
+    margin: 0 10% 0 10%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+.linha {
+    width: 100%;
+    height: 1px;
+    background-color: var(--corFundo);
+    margin-top: 5%;
+}
+.parte2 {
+    display: flex;
+    margin-top: 2%;
+    margin-left: 20%;
+    gap: 1%;
+}
+.parte2 img {
+    width: 24px;
+    height: 24px;
+}
+.parte2 p {
+    font-size: medium;
+    font-family: 'Inter';
+    color: var(--corBranco);
+    margin-top: 4px;
+}
+.copy {
+    margin-left: 5%;
 }
 
-.imagem-principal {
-    display: flex;
-    flex-direction: row;
-    margin-left: 82px;
-    margin-right: 57px;
-    margin-bottom: 64px;
-    margin-top: -200spx;
-}
-
-.bloco2 {
-    display: flex;
-    flex-direction: row;
+.fc {
+    text-decoration: none;
 }

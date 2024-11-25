@@ -19,6 +19,23 @@
                 <li><a href="sobre.html" class="nav-links">Sobre</a></li> 
             </ul>   
         </nav>
+
+        <!-- Botão do menu sanduíche -->
+        <div class="menu-mobile">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+
+        <!-- Menu mobile -->
+        <nav class="navbar-mobile">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="artigo.html">Artigo</a></li>
+                <li><a href="manual.html">Manual</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+            </ul>
+        </nav>
     </header>
 
     <section class="artigo">
@@ -27,16 +44,33 @@
                 com ESP-32 e sensor MQ2.
             </h1>
             
-            <a href="https://drive.google.com/file/d/1_i_a8TIr5lH60DXwSyvdwNAWv_55fESI/view?usp=sharing"> <button class="botao-artigo"> Visualizar </button> </a>
+            <a href="https://docs.google.com/document/d/1mq_Y3b2Rr7QAks-zCp8hz4RoB6aIXtGP8wIsD3HnhuE/edit?tab=t.0" target="_blank"> <button class="botao-artigo"> Visualizar </button> </a>
         </div>
     
+        <!--Colocar para abrir em uma nova aba, e colocar o pdf do artigo-->
         <div class="article-image">
-            <img src="./assets/teste2.png" alt="capa do artigo" class="imagem">
+            <img src="./assets/artigo-oficial.png" alt="capa do artigo" class="imagem">
         </div>
     </section>
 
     <section class="app">
-        <!--Parte da Gi-->
+        <div class="container"> 
+            <div class="nosso-app">
+               <h2 class="appTexto"> Acesse o nosso aplicativo! </h2>
+               <p class="texto"> O app do InAlert possibilita que o usuário<br>
+                   monitore diretamente de seu dispositivo <br>
+                   os vazamentos de gases em diferentes <br>
+                   ambientes que o sensor possa ficar.<br> </p>
+
+               <a href="faleconosco.html" class="ajuste"> 
+                   <button class="btn-baixar"> Baixe agora </button>
+               </a>
+            </div>
+
+            <div class="image-app"> 
+               <img src="./assets/app2.png" /> 
+            </div>
+        </div>
     </section>
 
     <footer>
@@ -48,9 +82,8 @@
         <div class="linha"></div>
 
         <div class="parte2">
-            <a href="https://www.instagram.com/gi_.santos20/"> <img src="./assets/instagram.png" alt="logo do instagram"> </a>
-            <a class="fc" href=""><p>Fale conosco</p></a>
-            <p class="copy"> Copyright &copy; 2024 !n Alert Todos os direitos reservados </p>
+            <a class="fc" target="_blank" href="faleconosco.html"><p>Fale conosco</p></a>
+            <p class="copy"> Copyright &copy; 2024 !nAlert Todos os direitos reservados </p>
         </div>
     </footer>
 
@@ -63,5 +96,7 @@
             });
         });
     </script>
+
+<script src="mobile-navbar.js"></script>
 </body>
 </html>
