@@ -26,10 +26,9 @@ body {
     justify-content: center;
     align-items: center;
     border-radius: 30px;
-    margin-top: 20px;
     height: 70px;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin: 2% auto; /* Centraliza automaticamente */
+    max-width: 1200px;
  
 }
 
@@ -57,6 +56,34 @@ img{
     width: 150px;
 
     margin-top: 5%;
+}
+
+.navbar li {
+    list-style: none;
+    font-size: 19px;
+    position: relative;
+}
+
+.navbar li :hover{
+    transform: scale(1.1);
+    opacity: 0.8; /* Levemente transparente */
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.navbar a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px; /* Distância da borda inferior */
+    width: 100%; /* Largura da borda */
+    height: 2px; /* Altura da borda */
+    background-color: var(--corFundo);
+    transform: scaleX(0); /* Inicialmente invisível */
+    transition: transform 0.3s ease; /* Transição suave */
+}
+
+.navbar a:hover::after {
+    transform: scaleX(1); /* Exibe a borda ao passar o mouse */
 }
 
 /* Estilo - home */

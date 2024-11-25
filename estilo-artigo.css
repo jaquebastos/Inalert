@@ -53,6 +53,28 @@ body {
   text-decoration: none;
 }
 
+.navbar li :hover{
+    transform: scale(1.1);
+    opacity: 0.8; /* Levemente transparente */
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.navbar a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px; /* Distância da borda inferior */
+    width: 100%; /* Largura da borda */
+    height: 2px; /* Altura da borda */
+    background-color: var(--corFundo);
+    transform: scaleX(0); /* Inicialmente invisível */
+    transition: transform 0.3s ease; /* Transição suave */
+}
+
+.navbar a:hover::after {
+    transform: scaleX(1); /* Exibe a borda ao passar o mouse */
+}
+
 img{
     height: 150px;
     width: 150px;
@@ -470,6 +492,7 @@ footer {
     }
 }
 
+/* Responsividade - celular */
 @media screen and (max-width: 576px) {
     .navbar {
         display: none;
